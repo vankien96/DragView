@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1E3937B43D9905E3984E7D0 /* Pods_DragView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A907479C6384BAE44F37DF8A /* Pods_DragView.framework */; };
+		FA63801B20D39C9F004D6A52 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63801920D39C9F004D6A52 /* TestViewController.swift */; };
+		FA63801C20D39C9F004D6A52 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA63801A20D39C9F004D6A52 /* TestViewController.xib */; };
+		FA63801E20D3C905004D6A52 /* DragViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63801D20D3C905004D6A52 /* DragViewDataSource.swift */; };
+		FA7104C620D1FCAF00691A69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7104C520D1FCAF00691A69 /* AppDelegate.swift */; };
+		FA7104C820D1FCAF00691A69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7104C720D1FCAF00691A69 /* ViewController.swift */; };
+		FA7104CB20D1FCAF00691A69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7104C920D1FCAF00691A69 /* Main.storyboard */; };
+		FA7104CD20D1FCB000691A69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7104CC20D1FCB000691A69 /* Assets.xcassets */; };
+		FA7104D020D1FCB000691A69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7104CE20D1FCB000691A69 /* LaunchScreen.storyboard */; };
+		FA7104DB20D1FCB000691A69 /* DragViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7104DA20D1FCB000691A69 /* DragViewTests.swift */; };
+		FA7104E620D1FCB100691A69 /* DragViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7104E520D1FCB100691A69 /* DragViewUITests.swift */; };
+		FA7104F620D205CE00691A69 /* DragTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7104F420D205CE00691A69 /* DragTableViewCell.swift */; };
+		FA7104F720D205CE00691A69 /* DragTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7104F520D205CE00691A69 /* DragTableViewCell.xib */; };
+		FA7104FB20D2091200691A69 /* CustomDragRenderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7104FA20D2091200691A69 /* CustomDragRenderDelegate.swift */; };
+		FA71050220D2115100691A69 /* DragViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71050020D2115100691A69 /* DragViewController.swift */; };
+		FA71050620D2122B00691A69 /* PageTabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71050420D2122B00691A69 /* PageTabCell.swift */; };
+		FA71050720D2122B00691A69 /* PageTabCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA71050520D2122B00691A69 /* PageTabCell.xib */; };
+		FA88BD4420D4AB8B008DDAC0 /* DragViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA88BD4320D4AB8B008DDAC0 /* DragViewDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA7104D720D1FCB000691A69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA7104BA20D1FCAF00691A69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA7104C120D1FCAF00691A69;
+			remoteInfo = DragView;
+		};
+		FA7104E220D1FCB100691A69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA7104BA20D1FCAF00691A69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA7104C120D1FCAF00691A69;
+			remoteInfo = DragView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6786A088A7DDB4E93353105B /* Pods-DragView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DragView/Pods-DragView.debug.xcconfig"; sourceTree = "<group>"; };
+		A907479C6384BAE44F37DF8A /* Pods_DragView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DragView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C80CA1F7AD661A4EDD2AE48D /* Pods-DragView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragView.release.xcconfig"; path = "Pods/Target Support Files/Pods-DragView/Pods-DragView.release.xcconfig"; sourceTree = "<group>"; };
+		FA63801920D39C9F004D6A52 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		FA63801A20D39C9F004D6A52 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		FA63801D20D3C905004D6A52 /* DragViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragViewDataSource.swift; sourceTree = "<group>"; };
+		FA7104C220D1FCAF00691A69 /* DragView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7104C520D1FCAF00691A69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA7104C720D1FCAF00691A69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA7104CA20D1FCAF00691A69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA7104CC20D1FCB000691A69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA7104CF20D1FCB000691A69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA7104D120D1FCB000691A69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7104D620D1FCB000691A69 /* DragViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7104DA20D1FCB000691A69 /* DragViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragViewTests.swift; sourceTree = "<group>"; };
+		FA7104DC20D1FCB000691A69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7104E120D1FCB100691A69 /* DragViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7104E520D1FCB100691A69 /* DragViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragViewUITests.swift; sourceTree = "<group>"; };
+		FA7104E720D1FCB100691A69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7104F420D205CE00691A69 /* DragTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragTableViewCell.swift; sourceTree = "<group>"; };
+		FA7104F520D205CE00691A69 /* DragTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DragTableViewCell.xib; sourceTree = "<group>"; };
+		FA7104FA20D2091200691A69 /* CustomDragRenderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDragRenderDelegate.swift; sourceTree = "<group>"; };
+		FA7104FC20D2092E00691A69 /* DragView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DragView-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA71050020D2115100691A69 /* DragViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragViewController.swift; sourceTree = "<group>"; };
+		FA71050420D2122B00691A69 /* PageTabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTabCell.swift; sourceTree = "<group>"; };
+		FA71050520D2122B00691A69 /* PageTabCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageTabCell.xib; sourceTree = "<group>"; };
+		FA88BD4320D4AB8B008DDAC0 /* DragViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragViewDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA7104BF20D1FCAF00691A69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E3937B43D9905E3984E7D0 /* Pods_DragView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7104D320D1FCB000691A69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7104DE20D1FCB100691A69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15C127D1901CE4DBF09CF694 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6786A088A7DDB4E93353105B /* Pods-DragView.debug.xcconfig */,
+				C80CA1F7AD661A4EDD2AE48D /* Pods-DragView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6C47E8E584CE231A7F5F9128 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A907479C6384BAE44F37DF8A /* Pods_DragView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA7104B920D1FCAF00691A69 = {
+			isa = PBXGroup;
+			children = (
+				FA7104C420D1FCAF00691A69 /* DragView */,
+				FA7104D920D1FCB000691A69 /* DragViewTests */,
+				FA7104E420D1FCB100691A69 /* DragViewUITests */,
+				FA7104C320D1FCAF00691A69 /* Products */,
+				15C127D1901CE4DBF09CF694 /* Pods */,
+				6C47E8E584CE231A7F5F9128 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA7104C320D1FCAF00691A69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA7104C220D1FCAF00691A69 /* DragView.app */,
+				FA7104D620D1FCB000691A69 /* DragViewTests.xctest */,
+				FA7104E120D1FCB100691A69 /* DragViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA7104C420D1FCAF00691A69 /* DragView */ = {
+			isa = PBXGroup;
+			children = (
+				FA7104FF20D2113900691A69 /* DragViewController */,
+				FA7104F920D208FF00691A69 /* CustomDragRenderDelegate */,
+				FA7104F320D2053600691A69 /* Cell */,
+				FA7104C520D1FCAF00691A69 /* AppDelegate.swift */,
+				FA7104C720D1FCAF00691A69 /* ViewController.swift */,
+				FA7104C920D1FCAF00691A69 /* Main.storyboard */,
+				FA7104CC20D1FCB000691A69 /* Assets.xcassets */,
+				FA7104CE20D1FCB000691A69 /* LaunchScreen.storyboard */,
+				FA7104D120D1FCB000691A69 /* Info.plist */,
+				FA7104FC20D2092E00691A69 /* DragView-Bridging-Header.h */,
+				FA63801920D39C9F004D6A52 /* TestViewController.swift */,
+				FA63801A20D39C9F004D6A52 /* TestViewController.xib */,
+			);
+			path = DragView;
+			sourceTree = "<group>";
+		};
+		FA7104D920D1FCB000691A69 /* DragViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA7104DA20D1FCB000691A69 /* DragViewTests.swift */,
+				FA7104DC20D1FCB000691A69 /* Info.plist */,
+			);
+			path = DragViewTests;
+			sourceTree = "<group>";
+		};
+		FA7104E420D1FCB100691A69 /* DragViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA7104E520D1FCB100691A69 /* DragViewUITests.swift */,
+				FA7104E720D1FCB100691A69 /* Info.plist */,
+			);
+			path = DragViewUITests;
+			sourceTree = "<group>";
+		};
+		FA7104F320D2053600691A69 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA7104F420D205CE00691A69 /* DragTableViewCell.swift */,
+				FA7104F520D205CE00691A69 /* DragTableViewCell.xib */,
+				FA71050420D2122B00691A69 /* PageTabCell.swift */,
+				FA71050520D2122B00691A69 /* PageTabCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FA7104F920D208FF00691A69 /* CustomDragRenderDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FA7104FA20D2091200691A69 /* CustomDragRenderDelegate.swift */,
+			);
+			path = CustomDragRenderDelegate;
+			sourceTree = "<group>";
+		};
+		FA7104FF20D2113900691A69 /* DragViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA71050020D2115100691A69 /* DragViewController.swift */,
+				FA63801D20D3C905004D6A52 /* DragViewDataSource.swift */,
+				FA88BD4320D4AB8B008DDAC0 /* DragViewDelegate.swift */,
+			);
+			path = DragViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA7104C120D1FCAF00691A69 /* DragView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7104EA20D1FCB100691A69 /* Build configuration list for PBXNativeTarget "DragView" */;
+			buildPhases = (
+				2D035C5EF7F380836F163861 /* [CP] Check Pods Manifest.lock */,
+				FA7104BE20D1FCAF00691A69 /* Sources */,
+				FA7104BF20D1FCAF00691A69 /* Frameworks */,
+				FA7104C020D1FCAF00691A69 /* Resources */,
+				78D3EB203BAE94A9441EE7A9 /* [CP] Embed Pods Frameworks */,
+				CC91BF316CDE4E10328C51BB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DragView;
+			productName = DragView;
+			productReference = FA7104C220D1FCAF00691A69 /* DragView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA7104D520D1FCB000691A69 /* DragViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7104ED20D1FCB100691A69 /* Build configuration list for PBXNativeTarget "DragViewTests" */;
+			buildPhases = (
+				FA7104D220D1FCB000691A69 /* Sources */,
+				FA7104D320D1FCB000691A69 /* Frameworks */,
+				FA7104D420D1FCB000691A69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA7104D820D1FCB000691A69 /* PBXTargetDependency */,
+			);
+			name = DragViewTests;
+			productName = DragViewTests;
+			productReference = FA7104D620D1FCB000691A69 /* DragViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA7104E020D1FCB100691A69 /* DragViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7104F020D1FCB100691A69 /* Build configuration list for PBXNativeTarget "DragViewUITests" */;
+			buildPhases = (
+				FA7104DD20D1FCB100691A69 /* Sources */,
+				FA7104DE20D1FCB100691A69 /* Frameworks */,
+				FA7104DF20D1FCB100691A69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA7104E320D1FCB100691A69 /* PBXTargetDependency */,
+			);
+			name = DragViewUITests;
+			productName = DragViewUITests;
+			productReference = FA7104E120D1FCB100691A69 /* DragViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA7104BA20D1FCAF00691A69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Trương Văn Kiên";
+				TargetAttributes = {
+					FA7104C120D1FCAF00691A69 = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
+					};
+					FA7104D520D1FCB000691A69 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = FA7104C120D1FCAF00691A69;
+					};
+					FA7104E020D1FCB100691A69 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = FA7104C120D1FCAF00691A69;
+					};
+				};
+			};
+			buildConfigurationList = FA7104BD20D1FCAF00691A69 /* Build configuration list for PBXProject "DragView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA7104B920D1FCAF00691A69;
+			productRefGroup = FA7104C320D1FCAF00691A69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA7104C120D1FCAF00691A69 /* DragView */,
+				FA7104D520D1FCB000691A69 /* DragViewTests */,
+				FA7104E020D1FCB100691A69 /* DragViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA7104C020D1FCAF00691A69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA71050720D2122B00691A69 /* PageTabCell.xib in Resources */,
+				FA7104D020D1FCB000691A69 /* LaunchScreen.storyboard in Resources */,
+				FA7104CD20D1FCB000691A69 /* Assets.xcassets in Resources */,
+				FA7104CB20D1FCAF00691A69 /* Main.storyboard in Resources */,
+				FA63801C20D39C9F004D6A52 /* TestViewController.xib in Resources */,
+				FA7104F720D205CE00691A69 /* DragTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7104D420D1FCB000691A69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7104DF20D1FCB100691A69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D035C5EF7F380836F163861 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DragView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78D3EB203BAE94A9441EE7A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DragView/Pods-DragView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BetweenKit/BetweenKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BetweenKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DragView/Pods-DragView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC91BF316CDE4E10328C51BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DragView/Pods-DragView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA7104BE20D1FCAF00691A69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA63801B20D39C9F004D6A52 /* TestViewController.swift in Sources */,
+				FA71050620D2122B00691A69 /* PageTabCell.swift in Sources */,
+				FA7104C820D1FCAF00691A69 /* ViewController.swift in Sources */,
+				FA7104FB20D2091200691A69 /* CustomDragRenderDelegate.swift in Sources */,
+				FA88BD4420D4AB8B008DDAC0 /* DragViewDelegate.swift in Sources */,
+				FA7104F620D205CE00691A69 /* DragTableViewCell.swift in Sources */,
+				FA71050220D2115100691A69 /* DragViewController.swift in Sources */,
+				FA7104C620D1FCAF00691A69 /* AppDelegate.swift in Sources */,
+				FA63801E20D3C905004D6A52 /* DragViewDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7104D220D1FCB000691A69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7104DB20D1FCB000691A69 /* DragViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7104DD20D1FCB100691A69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7104E620D1FCB100691A69 /* DragViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA7104D820D1FCB000691A69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA7104C120D1FCAF00691A69 /* DragView */;
+			targetProxy = FA7104D720D1FCB000691A69 /* PBXContainerItemProxy */;
+		};
+		FA7104E320D1FCB100691A69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA7104C120D1FCAF00691A69 /* DragView */;
+			targetProxy = FA7104E220D1FCB100691A69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA7104C920D1FCAF00691A69 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA7104CA20D1FCAF00691A69 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA7104CE20D1FCB000691A69 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA7104CF20D1FCB000691A69 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA7104E820D1FCB100691A69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA7104E920D1FCB100691A69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA7104EB20D1FCB100691A69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6786A088A7DDB4E93353105B /* Pods-DragView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYQZK8RK33;
+				INFOPLIST_FILE = DragView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vk.TestFireBase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DragView/DragView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA7104EC20D1FCB100691A69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C80CA1F7AD661A4EDD2AE48D /* Pods-DragView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYQZK8RK33;
+				INFOPLIST_FILE = DragView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vk.TestFireBase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DragView/DragView-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA7104EE20D1FCB100691A69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DragViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vk.DragViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DragView.app/DragView";
+			};
+			name = Debug;
+		};
+		FA7104EF20D1FCB100691A69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DragViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vk.DragViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DragView.app/DragView";
+			};
+			name = Release;
+		};
+		FA7104F120D1FCB100691A69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DragViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vk.DragViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DragView;
+			};
+			name = Debug;
+		};
+		FA7104F220D1FCB100691A69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DragViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vk.DragViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DragView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA7104BD20D1FCAF00691A69 /* Build configuration list for PBXProject "DragView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7104E820D1FCB100691A69 /* Debug */,
+				FA7104E920D1FCB100691A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7104EA20D1FCB100691A69 /* Build configuration list for PBXNativeTarget "DragView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7104EB20D1FCB100691A69 /* Debug */,
+				FA7104EC20D1FCB100691A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7104ED20D1FCB100691A69 /* Build configuration list for PBXNativeTarget "DragViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7104EE20D1FCB100691A69 /* Debug */,
+				FA7104EF20D1FCB100691A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7104F020D1FCB100691A69 /* Build configuration list for PBXNativeTarget "DragViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7104F120D1FCB100691A69 /* Debug */,
+				FA7104F220D1FCB100691A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA7104BA20D1FCAF00691A69 /* Project object */;
+}
